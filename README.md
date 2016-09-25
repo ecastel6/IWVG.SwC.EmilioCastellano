@@ -15,5 +15,10 @@ Eclipse
 MAven
 GitHub
 
+## Toda la documentación detallada en la [wiki][] del proyecto
+
 ####Objetivo
 Trabajo colaborativo y manejo de repositorios. 
+
+[wiki]: https://github.com/ecastel6/IWVG.SwC.EmilioCastellano/wiki
+

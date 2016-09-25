@@ -1,4 +1,4 @@
-
+package es.upm.miw.spai.ecp2;
 
 /**
  * Conceptos: Las fracciones propias son aquellas cuyo numerador es menor que el
