@@ -18,7 +18,19 @@ GitHub
 ## Toda la documentación detallada en la [wiki][] del proyecto
 
 ####Objetivo
-Trabajo colaborativo y manejo de repositorios. 
+Trabajo colaborativo y manejo de repositorios.
+ 
+**Rol Arquitecto:**
+
+*Preparar el repositorio inicial, las clases de _Test_ y configurar el sistema de Integración continua (Travis)
+*Comprobar el buen funcionamiento de la aplicación.
+*Mandar tickets a los programadores y controlar que se resuelvan en el tiempo estimado.
+*Incluir cada ampliación en la Wiki.
+
+**Rol Programador:**
+
+*Llevar a cabo las modificaciones solicitadas.
+*Pasar los test antes de subir cada modificación al repositorio remoto.
 
 [wiki]: https://github.com/ecastel6/IWVG.SwC.EmilioCastellano/wiki
 
