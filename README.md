@@ -32,5 +32,8 @@ Trabajo colaborativo y manejo de repositorios.
 *Llevar a cabo las modificaciones solicitadas.
 *Pasar los test antes de subir cada modificación al repositorio remoto.
 
+####Máster de Ingeniería Web. Universidad Politécnica de Madrid.
+
+@ecastel6
 [wiki]: https://github.com/ecastel6/IWVG.SwC.EmilioCastellano/wiki
 

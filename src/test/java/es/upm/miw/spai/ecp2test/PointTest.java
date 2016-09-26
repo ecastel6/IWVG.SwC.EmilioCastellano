@@ -1,7 +1,10 @@
-package es.upm.miw.spai.ecp2;
+package es.upm.miw.spai.ecp2test;
 
 import static org.junit.Assert.*;
 import org.junit.Test;
+
+import es.upm.miw.spai.ecp2.Point;
+
 import org.junit.Before;
 
 public class PointTest {

@@ -1,8 +1,10 @@
-package es.upm.miw.spai.ecp2;
+package es.upm.miw.spai.ecp2test;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
+
+import es.upm.miw.spai.ecp2.DecimalCollection;
 
 public class DecimalCollectionTest {
     private DecimalCollection dc;
@@ -37,6 +39,11 @@ public class DecimalCollectionTest {
     @Test
     public void testSum() {
         assertEquals(6, this.dc.sum(), 10e-5);
+    }
+    
+    @Test
+    public void testAverage() {
+        assertEquals(3.0,this.dc.average(), 10e-5);
     }
 
     @Test

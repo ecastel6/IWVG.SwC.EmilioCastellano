@@ -1,9 +1,11 @@
-package es.upm.miw.spai.ecp2;
+package es.upm.miw.spai.ecp2test;
 
 import static org.junit.Assert.*;
 
 import org.junit.Before;
 import org.junit.Test;
+
+import es.upm.miw.spai.ecp2.User;
 
 public class UserTest {
 
@@ -39,7 +41,7 @@ public class UserTest {
     public void testGetNumber() {
         assertEquals(NUM, usr.getNumber());
     }
-
+    
     @Test
     public void testGetName() {
         assertEquals(NOMBRE, usr.getName());
@@ -48,5 +50,10 @@ public class UserTest {
     @Test
     public void testGetFamilyName() {
         assertEquals(APELLIDO, usr.getFamilyName());
+    }
+    
+    @Test
+    public void testGetNametoUpper() {
+        assertEquals(NOMBRE.toUpperCase(), usr.getNametoUpper());
     }
 }

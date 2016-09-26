@@ -61,5 +61,10 @@ public class Fraction {
     public int getDenominator() {
         return denominator;
     }
+
+    public Object isPropia() {
+        // TODO Auto-generated method stub
+        return null;
+    }
     
 }

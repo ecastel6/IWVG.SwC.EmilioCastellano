@@ -1,8 +1,10 @@
-package es.upm.miw.spai.ecp2;
+package es.upm.miw.spai.ecp2test;
 
 import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+
+import es.upm.miw.spai.ecp2.Fraction;
 
 public class FractionTest {
     Fraction fr;
@@ -37,5 +39,10 @@ public class FractionTest {
     @Test
     public void testGetDenominator() {
         assertEquals(6, this.fr.getDenominator());
+    }
+    
+    @Test
+    public void testisPropia(){
+        assertEquals(true, this.fr.isPropia());
     }
 }

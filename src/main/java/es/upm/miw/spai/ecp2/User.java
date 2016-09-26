@@ -1,5 +1,7 @@
 package es.upm.miw.spai.ecp2;
 
+import static org.junit.Assert.fail;
+
 public class User {
 
     private int number;
@@ -26,7 +28,7 @@ public class User {
     public String initials() {
         return this.name.substring(0, 1) + "." + this.familyName.substring(0, 1)+".";
     }
-
+    
     public int getNumber() {
         return this.number;
     }
@@ -34,8 +36,13 @@ public class User {
     public String getName() {
         return this.name;
     }
-
+    
     public String getFamilyName() {
         return this.familyName;
+    }
+
+    public Object getNametoUpper() {
+        // TODO Auto-generated method stub
+        return null;
     }
 }
