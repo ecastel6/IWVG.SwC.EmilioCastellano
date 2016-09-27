@@ -1,6 +1,7 @@
 package es.upm.miw.spai.ecp2test;
 
 import static org.junit.Assert.*;
+
 import org.junit.Test;
 
 import es.upm.miw.spai.ecp2.Point;
@@ -11,7 +12,7 @@ public class PointTest {
     private Point pt;
 
     @Before
-    public void before() {
+    public void before() throws Exception {
         pt = new Point(2, 3);
     }
 
@@ -22,14 +23,14 @@ public class PointTest {
     }
 
     @Test
-    public void testPointInt() {
+    public void testPointInt() throws Exception {
         pt = new Point(2);
         assertEquals(2, pt.getX());
         assertEquals(2, pt.getY());
     }
 
     @Test
-    public void testPoint() {
+    public void testPoint() throws Exception {
         pt = new Point();
         assertEquals(0, pt.getX());
         assertEquals(0, pt.getY());
@@ -47,7 +48,7 @@ public class PointTest {
 
 
     @Test
-    public void testTranslateOrigin() {
+    public void testTranslateOrigin() throws Exception {
         this.pt.translateOrigin(new Point(1, 1));
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
@@ -67,5 +68,6 @@ public class PointTest {
     public void testToString() {
         assertEquals("Point[2,3]",pt.toString());
     }
+    
 
 }
