@@ -62,9 +62,13 @@ public class Fraction {
         return denominator;
     }
 
-    public Object isPropia() {
-        // TODO Auto-generated method stub
-        return null;
+//    public Object isPropia() {
+//        // TODO Auto-generated method stub
+//        return null;
+//    }
+    
+    public boolean isProper(){
+    	return getNumerator() < getDenominator();
     }
     
 }

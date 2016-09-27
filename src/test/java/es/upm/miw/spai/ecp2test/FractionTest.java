@@ -41,8 +41,16 @@ public class FractionTest {
         assertEquals(6, this.fr.getDenominator());
     }
     
+//    @Test
+//    public void testisPropia(){
+//        assertEquals(true, this.fr.isPropia());
+//    }
+    
     @Test
-    public void testisPropia(){
-        assertEquals(true, this.fr.isPropia());
+    public void testIsProper(){
+    	//Siempre y cuando no cambie el before, si cambia: fr = = new Fraction(3,6);
+    	assertEquals(true, fr.isProper());
     }
+    
+    
 }
