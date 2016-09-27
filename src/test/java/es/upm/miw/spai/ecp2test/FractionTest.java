@@ -42,7 +42,11 @@ public class FractionTest {
     }
     
     @Test
-    public void testisPropia(){
-        assertEquals(true, this.fr.isPropia());
+    public void testisImProper(){
+        assertEquals(true, this.fr.isImproper());
+    }
+    @Test
+    public void testisProper(){
+        assertEquals(true, this.fr.isProper());
     }
 }

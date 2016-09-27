@@ -65,5 +65,15 @@ public class Fraction {
     public Object isPropia() {
     	return numerator<denominator;
     }
+
+	public Object isImproper() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public Object isProper() {
+		// TODO Auto-generated method stub
+		return null;
+	}
     
 }
