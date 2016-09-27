@@ -63,8 +63,7 @@ public class Fraction {
     }
 
     public Object isPropia() {
-        // TODO Auto-generated method stub
-        return null;
+    	return numerator<denominator;
     }
     
 }
