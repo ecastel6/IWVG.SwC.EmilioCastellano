@@ -66,9 +66,8 @@ public class Fraction {
 		return numerator>=denominator;
 	}
 
-	public Object isProper() {
-		// TODO Auto-generated method stub
-		return null;
-	}
+    public boolean isProper(){
+    	return getNumerator() < getDenominator();
+    }
     
 }

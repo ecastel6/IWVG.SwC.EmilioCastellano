@@ -38,7 +38,6 @@ public class DecimalCollection {
     }
 
     public double average() {
-        // TODO Auto-generated method stub
-        return 0;
+    	 return this.sum()/collection.size();
     }
 }

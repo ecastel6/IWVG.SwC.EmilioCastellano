@@ -41,6 +41,11 @@ public class FractionTest {
         assertEquals(6, this.fr.getDenominator());
     }
     
+//    @Test
+//    public void testisPropia(){
+//        assertEquals(true, this.fr.isPropia());
+//    }
+    
     @Test
     public void testisImProper(){
         assertEquals(false, this.fr.isImproper());
@@ -50,4 +55,6 @@ public class FractionTest {
     public void testisProper(){
         assertEquals(true, this.fr.isProper());
     }
+    
+    
 }
