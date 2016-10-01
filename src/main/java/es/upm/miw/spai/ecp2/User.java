@@ -9,6 +9,7 @@ public class User {
     private String name;
 
     private String familyName;
+    
 
     public User(int number, String name, String familyName) {
         this.number = number;
@@ -42,7 +43,6 @@ public class User {
     }
 
     public Object getNametoUpper() {
-        // TODO Auto-generated method stub
-        return null;
+        return this.name.toUpperCase();
     }
 }
