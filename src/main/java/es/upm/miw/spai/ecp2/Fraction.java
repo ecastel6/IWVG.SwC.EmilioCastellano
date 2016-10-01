@@ -38,8 +38,9 @@ public class Fraction {
     
 	
     private int numerator;
-
+    private int numerator2;
     private int denominator;
+    private int denominator2;
 
     public Fraction(int numerator, int denominator) {
         this.numerator = numerator;
@@ -68,6 +69,11 @@ public class Fraction {
 
     public boolean isProper(){
     	return getNumerator() < getDenominator();
+    }
+    
+    public int multiplyFractions(){
+        
+        return ((numerator*numerator2)/(denominator*denominator2));
     }
     
 }

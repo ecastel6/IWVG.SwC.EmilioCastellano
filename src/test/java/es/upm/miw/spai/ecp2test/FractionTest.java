@@ -8,10 +8,12 @@ import es.upm.miw.spai.ecp2.Fraction;
 
 public class FractionTest {
     Fraction fr;
-
+    Fraction fr2;
+    
     @Before
     public void before() {
         fr = new Fraction(3,6);
+        fr2 = new Fraction(2,4);
     }
     @Test
     public void testFractionIntInt() {
@@ -56,5 +58,9 @@ public class FractionTest {
         assertEquals(true, this.fr.isProper());
     }
     
+    @Test
+    public void testMultiplyFractions(){
+        assertEquals(0.25, this.fr.decimal()*this.fr2.decimal(), 1e-15);
+    }
     
 }
