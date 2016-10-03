@@ -63,7 +63,7 @@ public class Fraction {
     }
 
 	public Object isImproper() {
-		return numerator>=denominator;
+		return this.getNumerator()>this.getDenominator();
 	}
 
 	public Object isProper() {
