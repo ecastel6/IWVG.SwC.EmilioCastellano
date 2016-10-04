@@ -71,9 +71,11 @@ public class Fraction {
     	return getNumerator() < getDenominator();
     }
     
-    public int multiplyFractions(){
-        
-        return ((numerator*numerator2)/(denominator*denominator2));
+    public double multiplyFractions(Fraction f1,Fraction f2){
+        double newNumerator = f1.numerator * f2.numerator;
+        double newDenominator = f1.denominator * f2.denominator;
+        double result = newNumerator / newDenominator;
+        return result;
     }
     
 }

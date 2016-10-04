@@ -60,9 +60,8 @@ public class FractionTest {
     
     @Test
     public void testMultiplyFractions(){
-        Fraction instance=new Fraction();
-        assertEquals(6, instance.multiplyFractions(fraction1, fraction2).getNumerator());
-        assertEquals(24, instance.multiplyFractions(fraction1, fraction2).getDenominator());        
+        Fraction instance = new Fraction();
+        assertEquals(0.25, instance.multiplyFractions(fraction1,fraction2),1e-15);             
     }
    
     
