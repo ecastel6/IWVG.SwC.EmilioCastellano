@@ -1,46 +1,10 @@
 package es.upm.miw.spai.ecp2;
 
-/**
- * Conceptos: Las fracciones propias son aquellas cuyo numerador es menor que el
- * denominador
- * 
- * Las fracciones impropias son aquellas cuyo numerador es mayor que el
- * denominador
- * 
- * Dos fracciones son equivalentes cuando el producto de extremos (numerador de
- * la primera por denominador de la segunda) es igual al producto de medios
- * (denominador de la primera por el numerador de la segunda)
- * 
- * Las fracciones irreducibles son aquellas que no se pueden simplificar, esto
- * sucede cuando el numerador y el denominador son primos entre sí
- * 
- * Reducir varias fracciones a común denominador consiste en convertirlas en
- * otras equivalentes que tengan el mismo denominador
- * 
- * Comparar fracciones
- * 
- * Suma fracciones: En primer lugar se reducen los denominadores a común
- * denominador, y se suman o se restan los numeradores de las fracciones
- * equivalentes obtenidas
- * 
- * Multiplicación: La multiplicación de dos fracciones es otra fracción que
- * tiene: Por numerador el producto de los numeradores. Por denominador el
- * producto de los denominadores.
- * 
- * La división de dos fracciones es otra fracción que tiene: Por numerador el
- * producto de los extremos. Por denominador el producto de los medios. Invertir
- * fraccion
- * 
- * @author jbernal
- * 
- */
 public class Fraction {
-    
-	
+
     private int numerator;
-    private int numerator2;
+
     private int denominator;
-    private int denominator2;
 
     public Fraction(int numerator, int denominator) {
         this.numerator = numerator;
@@ -54,7 +18,7 @@ public class Fraction {
     public double decimal() {
         return (double) numerator / denominator;
     }
-    
+
     public int getNumerator() {
         return numerator;
     }
@@ -63,19 +27,18 @@ public class Fraction {
         return denominator;
     }
 
-	public Object isImproper() {
-		return this.getNumerator()>this.getDenominator();
-	}
-
-    public boolean isProper(){
-    	return getNumerator() < getDenominator();
+    public Object isImproper() {
+        return this.getNumerator() > this.getDenominator();
     }
-    
-    public Fraction multiplyFractions(Fraction f1,Fraction f2){
+
+    public boolean isProper() {
+        return getNumerator() < getDenominator();
+    }
+
+    public Fraction multiplyFractions(Fraction f1, Fraction f2) {
         Fraction fs = new Fraction();
         fs.numerator = f1.numerator * f2.numerator;
-        fs.denominator = f1.denominator * f2.denominator;        
+        fs.denominator = f1.denominator * f2.denominator;
         return fs;
     }
-    
 }

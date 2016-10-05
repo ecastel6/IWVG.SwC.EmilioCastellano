@@ -38,6 +38,6 @@ public class DecimalCollection {
     }
 
     public double average() {
-    	 return this.sum()/collection.size();
+        return this.sum() / collection.size();
     }
 }

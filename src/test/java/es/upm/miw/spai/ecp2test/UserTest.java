@@ -10,15 +10,18 @@ import es.upm.miw.spai.ecp2.User;
 public class UserTest {
 
     private static final String INICIALES = "E.C.";
+
     private static final int NUM = 36;
+
     private static final String NOMBRE = "Emilio";
+
     private static final String APELLIDO = "Castellano";
 
     public User usr;
 
     @Before
     public void before() {
-        usr = new User (NUM, NOMBRE, APELLIDO);
+        usr = new User(NUM, NOMBRE, APELLIDO);
     }
 
     public void testUser() {
@@ -41,7 +44,7 @@ public class UserTest {
     public void testGetNumber() {
         assertEquals(NUM, usr.getNumber());
     }
-    
+
     @Test
     public void testGetName() {
         assertEquals(NOMBRE, usr.getName());
@@ -51,7 +54,7 @@ public class UserTest {
     public void testGetFamilyName() {
         assertEquals(APELLIDO, usr.getFamilyName());
     }
-    
+
     @Test
     public void testGetNametoUpper() {
         assertEquals(NOMBRE.toUpperCase(), usr.getNametoUpper());
