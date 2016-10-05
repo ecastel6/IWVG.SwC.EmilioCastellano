@@ -1,24 +1,24 @@
 package es.upm.miw.spai.ecp2test;
 
-import static org.junit.Assert.assertEquals;
-
+import static org.junit.Assert.*;
 import org.junit.Before;
 import org.junit.Test;
+
 import es.upm.miw.spai.ecp2.Fraction;
 
 public class FractionTest {
-    Fraction fraction1;
-    Fraction fraction2;
+    Fraction fr;
+    Fraction fr2;
     
     @Before
     public void before() {
-        fraction1 = new Fraction(3,6);
-        fraction2 = new Fraction(2,4);
+        fr = new Fraction(3,6);
+        fr2 = new Fraction(2,4);
     }
     @Test
     public void testFractionIntInt() {
-        assertEquals(3, fraction1.getNumerator());
-        assertEquals(6, fraction1.getDenominator());
+        assertEquals(3, fr.getNumerator());
+        assertEquals(6, fr.getDenominator());
     }
 
     @Test
@@ -30,40 +30,34 @@ public class FractionTest {
 
     @Test
     public void testDecimal() {
-        assertEquals(0.5, this.fraction1.decimal(), 1e-15);
+        assertEquals(0.5, this.fr.decimal(), 1e-15);
     }
 
     @Test
     public void testGetNumerator() {
-        assertEquals(3, this.fraction1.getNumerator());
+        assertEquals(3, this.fr.getNumerator());
     }
 
     @Test
     public void testGetDenominator() {
-        assertEquals(6, this.fraction1.getDenominator());
+        assertEquals(6, this.fr.getDenominator());
     }
-    
-//    @Test
-//    public void testisPropia(){
-//        assertEquals(true, this.fr.isPropia());
-//    }
     
     @Test
     public void testisImProper(){
-        assertEquals(false, this.fraction1.isImproper());
+        assertEquals(false, this.fr.isImproper());
     }
     
     @Test
     public void testisProper(){
-        assertEquals(true, this.fraction1.isProper());
+        assertEquals(true, this.fr.isProper());
     }
     
     @Test
     public void testMultiplyFractions(){
         Fraction instance=new Fraction();
-        assertEquals(6, instance.multiplyFractions(fraction1, fraction2).getNumerator());
-        assertEquals(24, instance.multiplyFractions(fraction1, fraction2).getDenominator());        
+        assertEquals(6, instance.multiplyFractions(fr, fr2).getNumerator());
+        assertEquals(24, instance.multiplyFractions(fr, fr2).getDenominator());        
     }
-   
     
 }
