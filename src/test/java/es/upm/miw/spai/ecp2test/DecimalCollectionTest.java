@@ -25,7 +25,6 @@ public class DecimalCollectionTest {
     }
 
     @Test
-    //Pendiente de revisar
     public void testAdd() {
         this.dc.add(2);
         assertEquals(5, this.dc.size());
@@ -36,19 +35,20 @@ public class DecimalCollectionTest {
     public void testSize() {
         assertEquals(4, this.dc.size());
     }
+
     @Test
     public void testSum() {
         assertEquals(6, this.dc.sum(), 10e-5);
     }
-    
+
     @Test
     public void testAverage() {
-        assertEquals(3.0,this.dc.average(), 10e-5);
+        assertEquals(1.5, this.dc.average(), 10e-5);
     }
 
     @Test
     public void testHigher() {
-        assertEquals(3, this.dc.higher(), 10e-5);      
+        assertEquals(3, this.dc.higher(), 10e-5);
     }
 
 }

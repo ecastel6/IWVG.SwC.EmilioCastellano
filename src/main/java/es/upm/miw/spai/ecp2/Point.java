@@ -1,19 +1,23 @@
 package es.upm.miw.spai.ecp2;
 
 public class Point {
-    
+
     private int x, y;
 
-    public Point(int x, int y) {
-        this.x = x;
-        this.y = y;
+    private int maxCoordenate = 100;
+
+    private int minCoordenate = 0;
+
+    public Point(int x, int y) throws Exception {
+        setX(x);
+        setY(y);
     }
 
-    public Point(int xy) {
+    public Point(int xy) throws Exception {
         this(xy, xy);
     }
 
-    public Point() {
+    public Point() throws Exception {
         this(0, 0);
     }
 
@@ -29,7 +33,7 @@ public class Point {
         this.x -= origin.getX();
         this.y -= origin.getY();
     }
-    
+
     public int getX() {
         return this.x;
     }
@@ -38,9 +42,21 @@ public class Point {
         return this.y;
     }
 
+    public void setX(int x) throws Exception {
+        if (x > maxCoordenate || x < minCoordenate)
+            throw new Exception("Error! La coordenada X solo admite valores de 0 a 100");
+        this.x = x;
+    }
+
+    public void setY(int y) throws Exception {
+        if (y > maxCoordenate || y < minCoordenate)
+            throw new Exception("Error! La coordenada Y solo admite valores de 0 a 100");
+        this.y = y;
+    }
+
     @Override
     public String toString() {
         return "Point[" + x + "," + y + "]";
     }
-    
+
 }
