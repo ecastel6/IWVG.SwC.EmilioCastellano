@@ -60,8 +60,7 @@ public class FractionTest {
     
     @Test
     public void testMultiplyFractions(){
-        Fraction instance = new Fraction();
-        assertEquals(0.25, instance.multiplyFractions(fraction1,fraction2),1e-15);             
+                  
     }
    
     
