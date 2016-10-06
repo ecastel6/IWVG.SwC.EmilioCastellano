@@ -28,7 +28,7 @@ public class Fraction {
     }
 
     public Object isImproper() {
-        return this.getNumerator() > this.getDenominator();
+        return getNumerator() > getDenominator();
     }
 
     public boolean isProper() {
